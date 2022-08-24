@@ -1,0 +1,10 @@
+def fizzbuzz(n):
+  for i in range(1, n+1): #ITERATE AND CREATE THE NUMBERS BETWEEN 1 AND N+1(INPUT 21 WOULD CREATE ONLY 20 CAUSE INDEX STARTS AT 0)
+      if i%3 == 0 and i%5 == 0: #IF NUMBER IS DIVISIBLE BY 3 AND 5 PRINT FIZZBUZZ
+        print(str(i) + ":fizzbuzz")
+      elif i%3 == 0:  #ELSE IF THE NUMBER IS ONLY DIVISIBLE BY 3 PRINT FIZZ
+        print(str(i) + ":fizz")
+      elif i%5 == 0:  #ELSE IF THE NUMBER IS ONLY DIVISIBLE BY 5 PRINT BUZZ
+        print(str(i) + ":buzz")
+      else:           #ELSE ONLY PRINT THE : EMPTY WITHOUT ANY STRING
+        print(str(i)+":")
